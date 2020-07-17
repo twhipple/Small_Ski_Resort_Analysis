@@ -80,6 +80,8 @@ I created two new features: 'order_to_trip_date', 'miles_to_resort', and then us
 ## Modeling
 After much EDA and review of the data that was shared with me, I ended up using an Unsupervised KMeans Cluster Model. The majority of the features had insufficient data for me to work with and needed to be deleted. I did so some entry level statistics on types of skiers, skier age, and ability level but do not believe that it accurately represents the whole customer population. I had to do a lot of cleaning of the zip codes which I needed in order to create folium maps as well as determine skier distance from resort. I tried to group the customers according to some unique characteristics in order to look at those skiers who returned more than once, how far they traveled, how far in advance they ordered tickets, and what types of tickets they bought.
 
+Here the the results from my 'examine_clusters' function where stats for each cluster are visible.
+![](https://raw.githubusercontent.com/twhipple/dsc-capstone-project-v2-online-ds-pt-090919/master/Final_Notebook_files/cluster_examine_results.png)
 
 ## Conclusions
 #### Cluster 1 - The Money Makers
