@@ -1,88 +1,121 @@
-# Capstone Project Requirements
+# Analysis of Small Ski Resort Customer Data
 
-## Introduction
 
-In this lesson, we'll discuss the requirements for our **Capstone Project**!
+For an interactive README, [click here.](https://twhipple.github.io/final_notebook)
 
-## Objectives
 
-You will be able to:
+## Contents
+* Summary
+* Libraries
+* Business Understanding
+* Data Understanding
+* Modeling and Conclusions
+* Recommendations
+* Future Work
 
-* Describe all required aspects of the final project
-* Describe what constitutes a successful project
-
-## Introduction
-
-Congratulations on making it to the final project! It's been a long journey, but we can finally see the light at the end of the tunnel!
-
-![Actual Footage of you seeing the light at the end of the tunnel](/end-of-tunnel.gif)
-
-Now that you've learned everything we have to teach you, it's time to show off and flex your data science muscles with your own **_Capstone Project_**! This project will allow you to showcase everything you've learned as a data scientist to by completing a professional-level data science project of your choosing. This project will be significantly larger than any project you've completed so far, and will be the crown jewel of your portfolio. A strong capstone project is the single most important thing you can do to get the attention of potential employers, so be prepared to put as much effort into this project as possible - the results will be **_worth it!_**
-
-![Your portfolio brings all the employers to your inbox](/milkshake.gif)
-
-## Topic Requirements
-
-Your project should develop a data product or analysis related to a single topic. You are completely free to choose any topic that interests you, but keep in mind that you will need to complete this project end-to-end, including sourcing your own data. When choosing a topic, think through these questions:  
-
-* What would I be motivated to work on?
-* What data could I use?
-* How could an individual or organization use my product or findings?
-* What will I be able to accomplish in the time I have available?
-* What challenges do I foresee with this project?
-
-## Technical Requirements
-
-Your project must meet the following technical requirements:
-
-1. **_No Off-The-Shelf Datasets_**. This project is a chance for you to highlight your critical thinking and data sourcing skills by finding a good dataset to answer a useful question. You _can_ use a pre-existing dataset, but you should consider combining it with other datasets and/or engineering your own features. The goal is to showcase your ability to find and work with data, so just grabbing a squeaky-clean dataset is out of the question.
-
-2. **_Strong Data Exploration, with at least 4 relevant data visualizations._**  There are few skills that impress employers more than the ability to dive into a new dataset and produce engaging visualizations that communicate important information. For this project, anything worth knowing is worth visualizing. Level up your project by digging into more advanced visualization libraries like seaborn!
-
-3. **_Makes use of Supervised Learning_**. It is great to use **_Unsupervised Learning_** techniques as needed in your project (for instance, segmentation with clustering algorithms), but supervised learning should play a central role in answering your question. 
-
-4. **_Explicitly makes use of a Data Science Process such as OSEMN or CRISP-DM_**. Select a Data Science Process to use to give structure to your project. Each step in the process should correspond to a section in your Jupyter Notebook.  
-
-5. **_A well-defined goal with clearly presented results._** Your project should provide any background context needed to understand the project you are working on and why it's important. For instance, if you are trying to detect fault lines using Earthquake data, you should review the topic and your dataset so that the reader can understand your work.  Similarly, the results of your project should be clearly communicated. Do not just tell your audience the final accuracy of your models--be sure to answer "big picture" questions as well. For instance: Would you recommend shipping this model to production, or is more work needed? 
-
-**_NOTE:_** Inconclusive results are okay--from a purely scientific perspective, they are no more or less important or valuable than any other kinds of results. If your results are inconclusive, you should discuss what your next steps would be from there. For instance, what do you think it would take to get conclusive results--more data? Different data that was unavailable? Both? 
-
-## Requirements for Online Students Only
-
-### Deliverables
-
-For online students, the deliverables for this project consist of the following three components:
-
-1. A Jupyter notebook for a presentation.
-  * The Jupyter notebook will have two components:
-    1. An **_Abstract_** section that briefly explains your problem, your methodology, and your findings, and business recommendations as a result of your findings. This section should be 1-2 paragraphs long.  
-    2. The technical analysis for a data science audience. This detailed technical analysis should explicitly follow a Data Science Process as outlined in the previous section. It should be well-formatted and organized, and should contain all code, visualizations, and detailed explanations/analysis.
-    
-2. An organized **README.md** file in the GitHub repository containing your project code that describes the contents of the repository. This file should be the source of information for navigating through all the code in your repository. 
-    
-3. A blog post showcasing your project, with a focus on your methodology and findings. A well-written blog post about your project will probably be the first thing most recruiters and hiring managers see, so really take the time to polish up this blog post and explain your project, methodology, and findings/business recommendations in a clear, concise manner. This blog post should cover everything important about your project, but remember that your audience for this blog post will largely be non-technical. Your blog post should definitely contain visualizations, code snippets, and anything else you find important, but don't get bogged down trying to explain highly technical concepts. Your blog post should provide a link to the Github repository containing your actual project, for people that want to really dive into the technical aspects of your project.
-* Refer back to the [Blogging Guidelines](https://github.com/learn-co-curriculum/dsc-welcome-blogging) for the technical requirements and blog ideas.
-
-### Rubric 
-
-Online students can find a PDF of the rubric for the final capstone project [here](/online_capstone_project_rubric.pdf). 
-
-## Requirements for On-Campus Students Only
-
-For on-campus students, your project will be evaluated based on the contents of your GitHub repo, which must contain the following three components:
-
-1. A Jupyter notebook     
-2. An **README.md** file 
-3. Presentation slides
-
-The requirements for these components are described in detail in the rubric for the final capstone project [here](https://docs.google.com/spreadsheets/d/1YUC5_QVu8BEd7xBJumzspH40-KuJtL9KQInQYXGi5bE/edit?usp=sharing). You can learn how your teacher will use the rubric to review the project [here](https://github.com/learn-co-curriculum/dsc-campus-capstone-project-review).
-
-## Example Student Project
-
-Take a look at this [technical report](https://github.com/paulinaczheng/twitter_flu_tracking) from a Flatiron student that used tweet data to predict the weekly number of flu cases during flu season. Pay attention to how well structured the project is, and how much she relies on great visualizations to tell her story for her. Your explanations don't have to be wordy - a visualization is worth a thousand words!
 
 ## Summary
+Skiers further away tended to buy their tickets more in advance (having a higher ‘order mean’) but not exclusively - in fact the data showed there was a group of people who just tend to plan more in advance (Furthermore, some skiers may be using a non-local home address when they in fact live in a nearby city or town).
 
-The Capstone Project is the most critical part of the program. It gives you a chance to bring together all the skills you've learned into realistic projects and to practice key "business judgement" and communication skills.  Most importantly, it provides employers with strong signal about your technical abilities, and allow you to show the world what an amazing Data Scientist you've become!
+The two clusters with the most people were the skiers who lived the closest to the mountain - within approximately two hours. And obviously the group with the highest ticket revenue were those with the most adult ticket purchases (since adult tickets cost more than youth/senior). But it was the skiers in the cluster who returned more than once or bought multiple tickets that affected the revenue the most.
 
-The projects are serious and important - they can be passed and they can be failed. Take the project seriously, put the time in, ask for help from your peers or instructors early and often if you need it, and treat the review as a job interview and you'll do great. We're rooting for you to succeed and we're only going to ask you to take a review again if we believe that you need to. We'll also provide open and honest feedback so you can improve as quickly and efficiently as possible.
+I was really only able to use data from the Magic website for my conclusions. Without address information (or unique identifiers) from the Liftopia.com website it was difficult to include these customers into the dataset since I needed zip code information to plot where skiers were from, how far they traveled, and the regions that show the most customers.
+
+
+## Libraries
+Below are the libraries I will use in my project.
+* import pandas as pd
+* import numpy as np
+* import matplotlib.pyplot as plt
+* %matplotlib inline
+
+* import datetime as dt
+
+* import geopy.distance
+
+* from sklearn.preprocessing import StandardScaler
+
+* from sklearn.cluster import KMeans
+
+* import folium
+* from folium import plugins
+* from folium.plugins import MarkerCluster
+* from folium.plugins import HeatMap
+* from pywaffle import Waffle 
+* import seaborn as sns
+
+
+
+### Business Understanding
+**How can I use data to improve my local ski mountain?***
+
+For my data science capstone project, I was able to get four years of skier data from my local ski resort. Not only do I enjoy skiing, but thought I might be able to help out this small resort by providing some useful data analysis. Many of the big ski resort conglomerates have data science teams who examine a wide variety of customer data ranging from the most the popular ski lifts that people ride on a given day to the most sought after types of food ordered at the high mountain lodge. Nevertheless, with the data that was shared with me, I was able to create some fun visuals, explore different aspects of the data, and gain insight about the different customers visiting the resort.
+
+A note on semantics - while the resort certainly is shared by both skiers and snowboarders, I will use the term ‘skiers’ to include all manner of customers who enjoy the mountain. From alpine skiers to telemarker (free-heel) skiers, mono and sit-skiers (Paraplegic and Tetraplegic skiers) to snowboarders (as well as ski bikes, which I have seen at the resort but are not allowed everywhere).
+
+
+### Data Understanding
+I wasn't sure what kind of data my small, local, ski resort would collect. Large resorts collect all sorts of information and have numerous data analysts on staff (looking at; the number of skiers per day, per lift, average number of runs taken, amount of snow, snow-making, number of patrollers, ski accidents/injuries, number of lift-ops working, food sold, rentals, etc.) 
+
+The data I was able to get was a csv file for each of the past four years, 2017 - 2020 with private information deleted. It turns out the resort sells tickets through their website and stores the information with Liftopia.com (an online ticket resaler) which also sold lift tickets for the resort. About 75% of the data sales came directly from the website and about 25% from Liftopia.com. I did not get any data on day visitors who bought tickets directly at the mountain as this information is not collected.
+
+There were 28 columns:
+'order_id', 'ticket_id', 'order_status', 'product', 'ticket_type',
+'store', 'order_date', 'trip_date', 'marketing_opt_in',
+'purchaser_address', 'purchaser_city', 'purchaser_state',
+'purchaser_zip', 'purchaser_country', 'net_rate_revenue', 'currency',
+'barcode', 'guest_birthdate', 'guest_height', 'guest_weight',
+'guest_gender', 'guest_ability_level', 'guest_shoe_size',
+'guest_shoe_style', 'guest_shoe_type', 'guest_equipment_choice',
+'custom_field_question', 'custom_field_response'
+
+
+### Data Preparation
+The majority of the features contained only about 10% of the data an needed to be deleted. I focused on 'trip_date', 'order_date', 'purchaser_address', 'purchaser_city', 'purchaser_state', 'purchaser_zip', 'net_rate_revenue'. I decided to use only the addresses from the USA since they had the most complete zip code information and could be used for graphs.
+I created two new features: 'order_to_trip_date', 'miles_to_resort', and then used a groupby() method to look at the number of trips taken by each skier.
+
+
+## Modeling
+After much EDA and review of the data that was shared with me, I ended up using an Unsupervised KMeans Cluster Model. The majority of the features had insufficient data for me to work with and needed to be deleted. I did so some entry level statistics on types of skiers, skier age, and ability level but do not believe that it accurately represents the whole customer population. I had to do a lot of cleaning of the zip codes which I needed in order to create folium maps as well as determine skier distance from resort. I tried to group the customers according to some unique characteristics in order to look at those skiers who returned more than once, how far they traveled, how far in advance they ordered tickets, and what types of tickets they bought.
+
+
+## Conclusions
+#### Cluster 1 - The Money Makers
+Looks to me like this cluster contains the customers with the most number of trips and the highest total revenue. This cluster also includes at least one large group and possibly a number of medium sided groups which visited the resort. Nevertheless, the high number of adult tickets adds to the total revenue possibly as much as returning more often. These groups also contain some of the highest number of Youth/Senior tickets which could mean that these customers are coming as a family.
+
+#### Cluster 3  - The Travelers
+This cluster has the highest average distance to resort, which includes possibly all of the outliers who traveled the farthest. Oddly, this cluster does not contain the greatest order to trip dates, meaning that these customers bought their tickets and decided to go with little preparation (an median average of only a couple days). I suppose there is no way of knowing if some of these people have relocated to major cities near the resort such as Boston, Philly, or New York and are just using their original home addresses or if they actually traveled via plane/car to visit the resort in under a few days.
+
+#### Cluster 2 - Families
+Cluster 2 is the second largest group, with the second largest revenue, and the second largest number of Youth/Senior tickets. I am calling this the family group since it seems like the majority of the customers bought some combination of tickets. This group probably live within a few hour drive of the resort and the majority purchase their tickets only a couple days in advance.
+
+#### Cluster 0 - One Time Visitors
+Cluster 0 is the largest group. The majority of these people have only visited the mountain one time. How can we get these people to come back? How can we get these customers to go from cluster 0 to cluster 1 (the money-making group that returns with larger groups and families)?
+
+#### Cluster 4 - The Planners
+This final cluster has the highest mean order to trip date. Meaning that this group of customers are planning to visit the mountain much further in advance than the other groups - even further in advance than groups of people with addresses considerably farther away. For that reason I'm calling them the 'planners'. For whatever reason they have decided they are going skiing on average two months before their trip date - and about two months before most people decide to buy tickets. Perhaps they have very set vacation schedules or limited time off. Either way, they aren't necessarily bringing large groups to the mountain (a mean around 2 people) and their distance to the resort doesn't seem to be that much further than the majority (200 miles - probably close to 4 hours away)
+
+
+### Evaluation
+Results will be given to the ski resort in return for use of data.  I suppose the model could be applied to any number of small, local resorts around the country.
+
+
+## Recommendations
+Include data from Day-Ticket and Season Pass Holders if possible.
+
+Plus, any information about summer and off-season visitors might have some valuable data to explore - I know lots of successful resorts are turning to year-round activities to offset the decline in ski season numbers.
+
+I would also like to split up the Youth/Senior section and look more specifically at age. Unfortunately most of the data didn't include birth dates but it would be interesting to separate kids from seniors purely to look at the numbers.
+
+
+## Future Work
+Now that we have the skiers grouped into clusters, we can apply different marketing strategies based on their grouped characteristics using skier addresses - both for current skiers as well as future skiers.
+
+
+### Google Distance API
+For about 100 dollars I could accurately calculate the driving distance for each customer ($5 per 1000). While I'm not sure if this would change my number significantly, it would certainly be a more accurate statistic.
+https://developers.google.com/maps/documentation/distance-matrix/usage-and-billing
+
+### United States Zip Code Demographic
+For about 200 dollars I could include much more specific demographic information for each zip code in my dataset - including income and education levels, home and rental costs, specific age and gender stats as well as all population numbers. 
+https://www.unitedstateszipcodes.org/zip-code-database/
