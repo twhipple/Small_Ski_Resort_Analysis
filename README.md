@@ -1,5 +1,7 @@
 # Analysis of Small Ski Resort Customer Data
 ![](https://raw.githubusercontent.com/twhipple/dsc-capstone-project-v2-online-ds-pt-090919/master/Final_Notebook_files/winter-1476870.jpg)
+Image: Freshly groomed cordoroy awaits the first skiers of the day. Source: ma xx, freeimages.com
+
 
 For an interactive README, [click here.](https://twhipple.github.io/final_notebook)
 
