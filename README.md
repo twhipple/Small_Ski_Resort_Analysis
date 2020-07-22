@@ -104,7 +104,7 @@ This final cluster has the highest mean order to trip date. Meaning that this gr
 Results will be given to the ski resort in return for use of data.  I suppose the model could be applied to any number of small, local resorts around the country.
 
 
-## Recommendations
+## Future Work
 Include data from Day-Ticket and Season Pass Holders if possible.
 
 Plus, any information about summer and off-season visitors might have some valuable data to explore - I know lots of successful resorts are turning to year-round activities to offset the decline in ski season numbers.
@@ -112,7 +112,7 @@ Plus, any information about summer and off-season visitors might have some valua
 I would also like to split up the Youth/Senior section and look more specifically at age. Unfortunately most of the data didn't include birth dates but it would be interesting to separate kids from seniors purely to look at the numbers.
 
 
-## Future Work
+## Recommendations
 Now that we have the skiers grouped into clusters, we can apply different marketing strategies based on their grouped characteristics using skier addresses - both for current skiers as well as future skiers.
 
 
