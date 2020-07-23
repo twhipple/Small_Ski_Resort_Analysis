@@ -17,11 +17,13 @@ For an interactive README, [click here.](https://twhipple.github.io/final_notebo
 
 
 ## Summary
+After much research and review of the data that was shared with me, I was able to use a data science algorithm to help me cluster skiers based on similar characteristics. I put the skiers into five categories: The Money-Makers, The Family Group, The Planners, The Travelers, and the largest group, The One-Time Visitors.
+
 Skiers further away tended to buy their tickets more in advance (having a higher ‘order mean’) but not exclusively - in fact the data showed there was a group of people who just tend to plan more in advance (Furthermore, some skiers may be using a non-local home address when they in fact live in a nearby city or town).
 
 The two clusters with the most people were the skiers who lived the closest to the mountain - within approximately two hours. And obviously the group with the highest ticket revenue were those with the most adult ticket purchases (since adult tickets cost more than youth/senior). But it was the skiers in the cluster who returned more than once or bought multiple tickets that affected the revenue the most.
 
-I was really only able to use data from the Magic website for my conclusions. Without address information (or unique identifiers) from the Liftopia.com website it was difficult to include these customers into the dataset since I needed zip code information to plot where skiers were from, how far they traveled, and the regions that show the most customers.
+I was really only able to use data from the Ski Resort website for my conclusions. Without address information (or unique identifiers) from the Liftopia.com website it was difficult to include these customers into the dataset since I needed zip code information to plot where skiers were from, how far they traveled, and the regions that show the most customers.
 
 
 ## Libraries
@@ -78,7 +80,7 @@ I created two new features: 'order_to_trip_date', 'miles_to_resort', and then us
 
 
 ## Modeling
-After much EDA and review of the data that was shared with me, I ended up using an Unsupervised KMeans Cluster Model. The majority of the features had insufficient data for me to work with and needed to be deleted. I did so some entry level statistics on types of skiers, skier age, and ability level but do not believe that it accurately represents the whole customer population. I had to do a lot of cleaning of the zip codes which I needed in order to create folium maps as well as determine skier distance from resort. I tried to group the customers according to some unique characteristics in order to look at those skiers who returned more than once, how far they traveled, how far in advance they ordered tickets, and what types of tickets they bought.
+After the EDA and review of the data that was shared with me, I ended up using an Unsupervised KMeans Cluster Model. The majority of the features had insufficient data for me to work with and needed to be deleted. I did so some entry level statistics on types of skiers, skier age, and ability level but do not believe that it accurately represents the whole customer population. I had to do a lot of cleaning of the zip codes which I needed in order to create folium maps as well as determine skier distance from resort. I tried to group the customers according to some unique characteristics in order to look at those skiers who returned more than once, how far they traveled, how far in advance they ordered tickets, and what types of tickets they bought.
 
 Here the the results from my 'examine_clusters' function where stats for each cluster are visible.
 ![](https://raw.githubusercontent.com/twhipple/dsc-capstone-project-v2-online-ds-pt-090919/master/Final_Notebook_files/cluster_examine_results.png)
