@@ -3,10 +3,11 @@
 Image: Freshly groomed corduroy awaits the first skiers of the day. Source: ma xx, freeimages.com
 
 
-For an interactive README, [click here.](https://twhipple.github.io/final_notebook)
+For an interactive README with fun maps and graphs, [click here.](https://twhipple.github.io/final_notebook)
 
 
 ## README Outline
+* Introduction
 * Summary
 * Repo Contents
 * Libraries & Prerequisites
@@ -17,6 +18,10 @@ For an interactive README, [click here.](https://twhipple.github.io/final_notebo
 * Conclusions
 * Recommendations
 * Future Work
+
+
+## Introduction
+For my data science capstone project, I was able to get four years of skier data from a local ski resort. Not only do I enjoy skiing, but thought I might be able to help out this small resort by providing some useful data analysis. Many of the big ski resort conglomerates have data science teams who examine a wide variety of customer data ranging from the most the popular ski lifts that people ride on a given day to the most sought after types of food ordered at the high mountain lodge. Nevertheless, with the data that was shared with me, I was able to create some fun visuals, explore different aspects of the data, and gain insight about the different customers visiting the resort. 
 
 
 ## Summary
