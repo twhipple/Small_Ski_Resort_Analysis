@@ -6,12 +6,15 @@ Image: Freshly groomed corduroy awaits the first skiers of the day. Source: ma x
 For an interactive README, [click here.](https://twhipple.github.io/final_notebook)
 
 
-## Contents
+## README Outline
 * Summary
-* Libraries
+* Repo Contents
+* Libraries & Prerequisites
 * Business Understanding
 * Data Understanding
-* Modeling and Conclusions
+* Data Preparation
+* Modeling
+* Conclusions
 * Recommendations
 * Future Work
 
@@ -25,22 +28,27 @@ The two clusters with the most people were the skiers who lived the closest to t
 
 I was really only able to use data from the Ski Resort website for my conclusions. Without address information (or unique identifiers) from the Liftopia.com website it was difficult to include these customers into the dataset since I needed zip code information to plot where skiers were from, how far they traveled, and the regions that show the most customers.
 
+## Repo Contents
+This repo contains the following:
+* README.md - this is where you are now!
+* CONTRIBUTING.md - a reference to the people who made this project possible.
+* LICENSE.md - the required license information.
+* Final_Notebook.ipynb - the Jupyter Notebook containing the finalized code for this project.
+* Additional_Notebooks - Jupyter Notebooks with practice code.
+* Data Folder - This folder has been deleted for privacy purposes.
+* Data Files - Folder with all images and additional files.
 
-## Libraries
+
+## Libraries & Prerequisites
 Below are the libraries I will use in my project.
 * import pandas as pd
 * import numpy as np
 * import matplotlib.pyplot as plt
 * %matplotlib inline
-
 * import datetime as dt
-
 * import geopy.distance
-
 * from sklearn.preprocessing import StandardScaler
-
 * from sklearn.cluster import KMeans
-
 * import folium
 * from folium import plugins
 * from folium.plugins import MarkerCluster
@@ -49,8 +57,7 @@ Below are the libraries I will use in my project.
 * import seaborn as sns
 
 
-
-### Business Understanding
+## Business Understanding
 **How can I use data to improve my local ski mountain?***
 
 For my data science capstone project, I was able to get four years of skier data from my local ski resort. Not only do I enjoy skiing, but thought I might be able to help out this small resort by providing some useful data analysis. Many of the big ski resort conglomerates have data science teams who examine a wide variety of customer data ranging from the most the popular ski lifts that people ride on a given day to the most sought after types of food ordered at the high mountain lodge. Nevertheless, with the data that was shared with me, I was able to create some fun visuals, explore different aspects of the data, and gain insight about the different customers visiting the resort.
@@ -58,7 +65,7 @@ For my data science capstone project, I was able to get four years of skier data
 A note on semantics - while the resort certainly is shared by both skiers and snowboarders, I will use the term ‘skiers’ to include all manner of customers who enjoy the mountain. From alpine skiers to telemarker (free-heel) skiers, mono and sit-skiers (Paraplegic and Tetraplegic skiers) to snowboarders (as well as ski bikes, which I have seen at the resort but are not allowed everywhere).
 
 
-### Data Understanding
+## Data Understanding
 I wasn't sure what kind of data my small, local, ski resort would collect. Large resorts collect all sorts of information and have numerous data analysts on staff (looking at; the number of skiers per day, per lift, average number of runs taken, amount of snow, snow-making, number of patrollers, ski accidents/injuries, number of lift-ops working, food sold, rentals, etc.) 
 
 The data I was able to get was a csv file for each of the past four years, 2017 - 2020 with private information deleted. It turns out the resort sells tickets through their website and stores the information with Liftopia.com (an online ticket resaler) which also sold lift tickets for the resort. About 75% of the data sales came directly from the website and about 25% from Liftopia.com. I did not get any data on day visitors who bought tickets directly at the mountain as this information is not collected.
@@ -74,7 +81,7 @@ There were 28 columns:
 'custom_field_question', 'custom_field_response'
 
 
-### Data Preparation
+## Data Preparation
 The majority of the features contained only about 10% of the data an needed to be deleted. I focused on 'trip_date', 'order_date', 'purchaser_address', 'purchaser_city', 'purchaser_state', 'purchaser_zip', 'net_rate_revenue'. I decided to use only the addresses from the USA since they had the most complete zip code information and could be used for graphs.
 I created two new features: 'order_to_trip_date', 'miles_to_resort', and then used a groupby() method to look at the number of trips taken by each skier.
 
@@ -102,7 +109,7 @@ Cluster 0 is the largest group. The majority of these people have only visited t
 This final cluster has the highest mean order to trip date. Meaning that this group of customers are planning to visit the mountain much further in advance than the other groups - even further in advance than groups of people with addresses considerably farther away. For that reason I'm calling them the 'planners'. For whatever reason they have decided they are going skiing on average two months before their trip date - and about two months before most people decide to buy tickets. Perhaps they have very set vacation schedules or limited time off. Either way, they aren't necessarily bringing large groups to the mountain (a mean around 2 people) and their distance to the resort doesn't seem to be that much further than the majority (200 miles - probably close to 4 hours away)
 
 
-### Evaluation
+## Evaluation
 Results will be given to the ski resort in return for use of data.  I suppose the model could be applied to any number of small, local resorts around the country.
 
 
@@ -125,3 +132,25 @@ https://developers.google.com/maps/documentation/distance-matrix/usage-and-billi
 ### United States Zip Code Demographic
 For about 200 dollars I could include much more specific demographic information for each zip code in my dataset - including income and education levels, home and rental costs, specific age and gender stats as well as all population numbers. 
 https://www.unitedstateszipcodes.org/zip-code-database/
+
+
+## Built With:
+Jupyter Notebook
+MacBook Air - Catalina OS
+Python 3.0
+statsmodels libraries
+scikit.learn
+GitHub
+
+## Contributors
+Please read CONTRIBUTING.md for details
+
+## Authors
+Thomas Whipple
+Flatiron Academy
+
+## License
+Flatiron Academy - see the LICENSE.md file for details
+
+## Acknowledgments
+Thank you to my cohort team for all of their suggestions, Flatiron coaches, and to my instructor Jeff Herman.
